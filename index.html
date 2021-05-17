@@ -7,13 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cesium App</title>
   <link rel="stylesheet" href="style.css">
+
+    <!-- cesium -->
+    <script src="Cesium/Cesium.js"></script>
+    <link href="Cesium/Widgets/widgets.css" rel="stylesheet">
+
 </head>
 
 <body>
   <div class="container">
     <nav>Navbar</nav>
-    <main>Main</main>
-    <div id="sidebar">Sidebar
+    <main>
+      <!-- Cesium Viewer -->
+      <div id="cesiumContainer"></div>
+    </main>
+    <div id="sidebar">
+      Sidebar<br>
       <button onclick="show_point_dialog()">Add a point</button>
     </div>
     <footer>Footer</footer>
@@ -23,7 +32,7 @@
     <h1>
       <p>Add a point</p>
     </h1>
-    <input id="pt_lon" type="text" value="123.456" placeholder="Longitude">
+    <input id="pt_lon" type="text" value="121.456" placeholder="Longitude">
     <input id="pt_lat" type="text" value="23.456" placeholder="Latitude">
     <button onclick="add_point()">Add</button>
   </div>
