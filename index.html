@@ -14,9 +14,18 @@
     <nav>Navbar</nav>
     <main>Main</main>
     <div id="sidebar">Sidebar
-      <button onclick="add_point()">Add a point</button>
+      <button onclick="show_point_dialog()">Add a point</button>
     </div>
     <footer>Footer</footer>
+  </div>
+
+  <div id="point_dialog">
+    <h1>
+      <p>Add a point</p>
+    </h1>
+    <input id="pt_lon" type="text" value="123.456" placeholder="Longitude">
+    <input id="pt_lat" type="text" value="23.456" placeholder="Latitude">
+    <button onclick="add_point()">Add</button>
   </div>
 
   <script src="index.js"></script>

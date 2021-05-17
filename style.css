@@ -1,6 +1,11 @@
+
+
 .container {
+  position: absolute;
+  z-index: -1;
   display: grid;
   height: 100vh;
+  width: 100vw;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 0.5fr 5fr 0.5fr;
   grid-template-areas:
@@ -43,4 +48,21 @@ footer {
       "footer"
     ;
   }
+}
+
+
+#point_dialog{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  height: 200px;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  padding: 10px;
+  border-color: blueviolet;
+  border-width: 3px;
+  border-style: dashed;
+  transform: translate(-50%, -50%);
+  background-color: rgb(129, 175, 212);
 }
